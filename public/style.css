@@ -55,5 +55,23 @@ h1 {
 }
 
 .components {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  border-style: solid;
+  border-spacing: 5px;
+  background-color: #e7e7db;
+  min-width: 300px;
+  padding: 5px;
+}
+
+button {
+  font-size: 15px;
+  padding: 3px;
+  background-color: white;
+  opacity: 0.5;
 }
