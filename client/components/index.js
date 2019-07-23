@@ -4,3 +4,8 @@
  * having to figure out which file they belong to!
  */
 export {default as Navbar} from './navbar'
+export {default as Home} from './home'
+export {default as Encounter} from './encounter'
+export {default as Treasure} from './treasure'
+export {default as Weather} from './weather'
+export {default as Map} from './map'

@@ -3,6 +3,12 @@
   padding: 0px;
 }
 
+html {
+  height: 100%;
+  background-image: url('./images/DragonPlus.jpg');
+  background-size: cover;
+}
+
 body {
   font-family: 'Abril Fatface', cursive;
 }
@@ -20,9 +26,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #e7e7db;
+  padding-bottom: 30px;
 }
 
 nav div {
@@ -38,13 +42,18 @@ form div {
 
 h1 {
   margin: 0px;
-  padding: 10px;
+  text-shadow: 3px 3px black;
   color: red;
-  background-color: black;
   text-align: center;
+  font-size: 45px;
 }
 
 .tools {
   background-color: #e7e7db;
   color: #5a5a5a;
+  font-size: 20px;
+}
+
+.components {
+  text-align: center;
 }

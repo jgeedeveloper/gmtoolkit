@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
@@ -7,13 +6,24 @@ import {logout} from '../store'
 const Navbar = () => (
   <div>
     <h1>D&D 5e: GM TOOLKIT</h1>
+    <hr />
     <nav>
-      <div className="tools">Encounter Generator</div>
-      <div className="tools">Treasure Generator</div>
-      <Link to="/weather">
+      <Link to="/">
+        <div className="tools">HOME</div>
+      </Link>
+      <Link to="/encounterGenerator">
+        <div className="tools">Encounter Generator</div>
+      </Link>
+      <Link to="/treasureGenerator">
+        {' '}
+        <div className="tools">Treasure Generator</div>
+      </Link>
+      <Link to="/weatherGenerator">
         <div className="tools">Weather Generator </div>
       </Link>
-      <div className="tools">Map</div>
+      <Link to="/map">
+        <div className="tools">Map</div>
+      </Link>
     </nav>
   </div>
 )
@@ -36,11 +46,3 @@ const mapDispatch = dispatch => {
 }
 
 export default connect(mapState, mapDispatch)(Navbar)
-
-/**
- * PROP TYPES
- */
-// Navbar.propTypes = {
-//   handleClick: PropTypes.func.isRequired,
-//   isLoggedIn: PropTypes.bool.isRequired
-// }
