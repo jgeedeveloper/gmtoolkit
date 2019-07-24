@@ -75,3 +75,7 @@ button {
   background-color: white;
   opacity: 0.5;
 }
+
+#mapid {
+  height: 700px;
+}
