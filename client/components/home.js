@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Home = () => (
-  <div className="components">
-    <div>Select Your Tool Above</div>
-  </div>
-)
+class Home extends React.Component {
+  render() {
+    return (
+      <div className="components">
+        <div>Select Your Tool Above</div>
+      </div>
+    )
+  }
+}
 
 export default Home

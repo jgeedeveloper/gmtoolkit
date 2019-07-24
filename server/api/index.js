@@ -1,7 +1,7 @@
 const router = require('express').Router()
 module.exports = router
 
-router.use('/weather', require('./weather'))
+router.use('/weatherGenerator', require('./weather'))
 
 router.use((req, res, next) => {
   const error = new Error('Not Found')
