@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Route, Switch} from 'react-router-dom'
-import {Home, Encounter, Treasure, Weather, Map} from './components'
+import {Home, Encounter, Treasure, Weather, LeafletMap} from './components'
 
 class Routes extends Component {
   render() {
@@ -11,7 +11,7 @@ class Routes extends Component {
         <Route path="/encounterGenerator" component={Encounter} />
         <Route path="/treasureGenerator" component={Treasure} />
         <Route path="/weatherGenerator" component={Weather} />
-        <Route path="/map" component={Map} />
+        <Route path="/map" component={LeafletMap} />
       </Switch>
     )
   }

@@ -75,6 +75,7 @@ button {
   background-color: white;
 }
 
-#mapid {
-  height: 700px;
+#mapContainer {
+  height: 660px;
+  width: 1020px;
 }
