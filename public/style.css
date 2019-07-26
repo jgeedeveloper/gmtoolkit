@@ -79,3 +79,9 @@ button {
   height: 660px;
   width: 1020px;
 }
+
+.underConstruction {
+  background-image: url('./images/UnderConstruction.jpg');
+  min-height: 250px;
+  min-width: 600px;
+}

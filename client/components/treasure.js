@@ -4,7 +4,7 @@ class Treasure extends React.Component {
   render() {
     return (
       <div className="components">
-        <div>This is the Treasure Generator Component</div>
+        <div className="underConstruction" />
       </div>
     )
   }
