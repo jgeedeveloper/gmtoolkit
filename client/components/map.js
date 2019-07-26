@@ -11,8 +11,15 @@ class LeafletMap extends React.Component {
     ).addTo(this.map)
     this.map.fitBounds(bounds)
 
-    var neverwinter = L.latLng([524, 406.3])
-    L.marker(neverwinter).addTo(this.map)
+    var neverwinter = L.marker(L.latLng([524, 406.3])).addTo(this.map)
+    neverwinter.bindPopup(
+      '<a href="https://forgottenrealms.fandom.com/wiki/Neverwinter" target="_blank"><b>Neverwinter</b></a>'
+    )
+
+    var trollbarkForest = L.marker(L.latLng([330, 510])).addTo(this.map)
+    trollbarkForest.bindPopup(
+      '<a href="https://forgottenrealms.fandom.com/wiki/Trollbark_Forest" target="_blank"><b>Trollbark Forest</b></a>'
+    )
   }
   render() {
     return (
